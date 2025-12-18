@@ -1,0 +1,27 @@
+--------------------------------------------------------------------------
+Release notes: from HEAD~1 till HEAD
+--------------------------------------------------------------------------
+Top Commit: 126502f
+Notes from: doc/release_notes.txt
+Esquire Explorer Sandbox release notes
+
+v1.0.0-2512.1716  initial version 
+
+--------------------------------------------------------------------------
+Branch : esquire.explorer.sandbox/develop
+--------------------------------------------------------------------------
+Code changes:
+--------------------------------------------------------------------------
+Changes from: backend/sandbox/changes.txt
+--------------------------------------------------------------------------
+Changes from: frontend/esquire/src/changes.txt
+--------------------------------------------------------------------------
+Changes from: frontend/src/changes.txt
+--------------------------------------------------------------------------
+
+-- 2025-12-18 | commit: 126502f | littletowerhill | release --
+M	.gitignore
+M	README.md
+R100	doc/releases/release_notes.txt	doc/release_notes.txt
+M	frontend/src/app/app.routes.ts
+ 4 files changed, 8 insertions(+), 3 deletions(-)
