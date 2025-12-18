@@ -27,8 +27,10 @@ where the package.json file is located, and execute the command ` npm run presta
 
 ## Run
 From sandbox root folder execute ` npm run dev ` command. It will run backend and frontend components simultaneously.
-Go to  [localhost:4200/pokemon]( http://localhost:4200/pokemon ) to see what Esquire Explorer can do.
+Go to  [localhost:4200]( http://localhost:4200 ) to see what Esquire Explorer can do.
 To learn Esquire Rest API documentation use [localhost:3000/api-docs/]( http://localhost:3000/api-docs/ ).
+
+Also you can see it on [stackblitz.com]( https://stackblitz.com/~/github.com/mir0n-pro/esquire.explorer.sandbox ).
 
 ## Further help
 mailto:mir0n.the.programmer@gmail.com
