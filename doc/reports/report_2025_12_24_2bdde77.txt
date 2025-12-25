@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------
+Release notes: from v1.0.0 till HEAD
+--------------------------------------------------------------------------
+Top Commit: 2bdde77
+Notes from: doc/release_notes.txt
+v1.0.1-2512.2420 Esquire API and types generalization
+   - frontend and backend 
+   - Esquire API and types generalization
+     : kind parameter is requried for esq-cmd, esq-enode
+     : value types: number instead of double, added integer, datetime, tabstring
+     : listvalues_kind moved inside of generic format
+     : added processing of 'tabstring' field type
+     
+
+--------------------------------------------------------------------------
+Branch : esquire.explorer.sandbox/develop
+--------------------------------------------------------------------------
+Code changes:
+--------------------------------------------------------------------------
+Changes from: backend/sandbox/changes.txt
+
+12/24/2025 Esquire API and types generalization
+ datastore.js
+  - listvalues_kind moved inside of generic format
+  - kind parameter is requried for esq-cmd, esq-enode
+--------------------------------------------------------------------------
+Changes from: frontend/esquire/src/changes.txt
+
+12/24/2025 Esquire API and types generalization
+api\EsqRestApi.ts
+   - kind parameter is requried for esq-cmd, esq-enode
+types\EsqEntityDictionary.ts   
+  - listvalues_kind moved inside of generic format 
+ui\EsqDictionary.ts  
+  - debug log added
+ui\EsqExplorerCallApiMill.ts  
+   - kind parameter is requried for esq-cmd, esq-enode
+ui\dialog\
+  +  added EsqTabStringComponent.* 
+ui\dialog\EsqEntityDetailsDialog.ts
+  - added processing of tabstring field value type
+  - readOnly made public
+  - kind parameter is requried for esq-cmd, esq-enode
+  - listvalues_kind moved inside of generic format 
+  
+--------------------------------------------------------------------------
+Changes from: frontend/src/changes.txt
+
+12/24/2025 Esquire API and types generalization
+ pokemon-tree\pokemon-tree.component.ts
+  - kind parameter is requried for esq-cmd, esq-enode
+--------------------------------------------------------------------------
+
+-- 2025-12-24 | commit: 2bdde77 | mir0n.the.programmer | Esquire API and types generalization --
+A	backend/.idea/.gitignore
+A	backend/.idea/modules.xml
+A	backend/.idea/server.iml
+A	backend/.idea/vcs.xml
+M	backend/api/openapi.yaml
+M	backend/sandbox/changes.txt
+M	backend/sandbox/datastore.js
+M	backend/services/EsquireService.js
+M	doc/release_notes.txt
+A	frontend/.vscode/extensions.json
+A	frontend/.vscode/launch.json
+A	frontend/.vscode/tasks.json
+M	frontend/esquire/src/api/EsqRestApi.ts
+M	frontend/esquire/src/changes.txt
+M	frontend/esquire/src/types/EsqEntityDictionary.ts
+M	frontend/esquire/src/ui/EsqDictionary.ts
+M	frontend/esquire/src/ui/EsqExplorerCallApiMill.ts
+M	frontend/esquire/src/ui/dialog/EsqDetailsDialog.scss
+M	frontend/esquire/src/ui/dialog/EsqEntityDetailsDialog.html
+M	frontend/esquire/src/ui/dialog/EsqEntityDetailsDialog.ts
+A	frontend/esquire/src/ui/dialog/EsqTabStringComponent.html
+A	frontend/esquire/src/ui/dialog/EsqTabStringComponent.scss
+A	frontend/esquire/src/ui/dialog/EsqTabStringComponent.ts
+M	frontend/src/changes.txt
+M	frontend/src/rest/api/esquire.service.ts
+M	frontend/src/rest/model/esqEntityField.ts
+M	frontend/src/tree/pokemon-tree/pokemon-tree.component.ts
+M	openapi-generate/esqSandboxApi.yaml
+ 28 files changed, 490 insertions(+), 165 deletions(-)
