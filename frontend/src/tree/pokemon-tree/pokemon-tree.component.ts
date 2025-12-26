@@ -6,35 +6,38 @@
 *
 *  History:
 * 12/24/2025 mir0n kind parameter is requried for esq-cmd, esq-enode
+* 12/24/2025 mir0n use esquire.ui library
 */
-import {Component,
-  OnInit,
-  AfterViewInit,
-  inject,
+import {Component
+  , OnInit
+  , AfterViewInit
+  , inject
 } from '@angular/core';
-import { MatToolbar } from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialog} from '@angular/material/dialog';
+import {EsqNodeType
+  , EsqNodeTypeFactory
+  , EsqRestApi
+  , EsqDictionaryApi
+  , EsqExplorerCallApi
+  , EsqNodeStatus
+  , EsqNodeStatusFactory
+} from '@mir0n-pro/esquire.ui/api';
+import {EsqDictionary, EsqExplorerCallApiMill} from '@mir0n-pro/esquire.ui/components';
+import {EsqExplorerComponent} from '@mir0n-pro/esquire.ui/explorer/flatTree';
 
-import {EsqNodeType, EsqNodeTypeFactory}     from '../../../esquire/src/types/EsqNodeTypeFactory';
-import {EsqNodeStatus, EsqNodeStatusFactory} from '../../../esquire/src/types/EsqNodeStatusFactory';
-import {EsqRestApi }                         from '../../../esquire/src/api/EsqRestApi';
-import {EsqExplorerComponent}                from '../../../esquire/src/ui/flatTree/EsqExplorerComponent';
-import { EsqDictionaryApi}                   from '../../../esquire/src/api/EsqDictionaryApi';
-import { EsqExplorerCallApiMill }            from '../../../esquire/src/ui/EsqExplorerCallApiMill';
-import { EsqExplorerCallApi }                from '../../../esquire/src/api/EsqExplorerCallApi';
-import { EsqDictionary }                     from '../../../esquire/src/ui/EsqDictionary';
-import {EsquireService}                      from '../../rest/api/esquire.service';
 
+import {EsquireService} from '../../rest/api/esquire.service';
 
 @Component({
   selector: 'app-pokemon-tree',
   standalone: true,
   imports: [
-    MatToolbar,
+    MatToolbarModule,
     EsqExplorerComponent
   ],
   templateUrl: './pokemon-tree.component.html',
-  styleUrl: './pokemon-tree.component.scss'
+  styleUrls: ['./pokemon-tree.component.scss']
 })
 
 export class PokemonTreeComponent implements OnInit, AfterViewInit {

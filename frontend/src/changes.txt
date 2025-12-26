@@ -1,6 +1,10 @@
 Esquire Frameworks(tm) 2.0
 Esquire Exporer sandbox (frontend)
 
+12/26/2025 esquire.ui library
+ pokemon-tree\pokemon-tree.component.ts
+    - use esquire.ui library
+
 12/17/2025 initial  
 
 12/24/2025 Esquire API and types generalization

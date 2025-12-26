@@ -6,7 +6,7 @@
     "prestart": "npm install"
   },
   "name": "esquire.exporer.sandbox",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -36,7 +36,8 @@
     "openapi-sampler": "^1.0.0-beta.15",
     "swagger-ui-express": "^4.0.2",
     "tslib": "^2.3.0",
-    "winston": "^3.19.0"
+    "winston": "^3.19.0",
+    "@mir0n-pro/esquire.ui": "^1.0.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",

@@ -1,5 +1,9 @@
 Esquire Explorer Sandbox release notes
 
+
+v1.0.2-2512.1612 remove esquire source code
+    - use esquire.ui library
+
 v1.0.0-2512.1716  initial version 
 
 v1.0.1-2512.2420 Esquire API and types generalization

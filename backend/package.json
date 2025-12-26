@@ -1,6 +1,6 @@
 {
-  "name":  "esquire-frameworks-tm-sandbox-api",
-  "version": "1.0.0",
+  "name":  "esquire.exporer.sandbox.backend",
+  "version": "1.0.2",
   "description": "This is a simplified Esquire Rest API for an inital sandbox environment.",
   "main": "index.js",
   "scripts": {
